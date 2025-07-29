@@ -155,6 +155,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { supabase } from './services/supabaseClient';
+import { FcGoogle } from 'react-icons/fc'; // Flat Color Google logo
+
 
 function Login() {
   const router = useRouter();
@@ -238,6 +240,8 @@ function Login() {
           Sign In With Google Authentication
         </p>
         <Button className="mt-7 w-full" onClick={signInWithGoogle}>
+            <FcGoogle size={20} />
+
           Login With Google
         </Button>
       </div>
